@@ -6,8 +6,7 @@ from sqlalchemy.orm import sessionmaker, Session, declarative_base
 
 # --- НАСТРОЙКИ БАЗЫ ДАННЫХ ---
 # Сейчас это SQLite. Позже мы заменим эту строку на ссылку от твоего Supabase (postgresql://...)
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres.ssidiyuiayozpzzqevkr:TuapseFuel2026@aws-0-eu-west-3.pooler.supabase.com:5432/postgres?pgbouncer=true"
-
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres.ssidiyuiayozpzzqevkr:TuapseFuel2026@aws-0-eu-west-3.pooler.supabase.com:6543/postgres?pgbouncer=true"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
